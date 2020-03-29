@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TestXamarinFirebase.Views.NotifPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Margin="60,0" Spacing="20">
+            <Entry x:Name="title" Placeholder="Titre du message" />
+            <Editor x:Name="body" Placeholder="Corps du message" HeightRequest="150" />
+            <Button Text="Envoyer" Margin="50,30" Clicked="OnClickSend" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

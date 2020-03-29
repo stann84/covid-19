@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TestXamarinFirebase.MenuPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Margin="20">
+            <Label x:Name="Label" Text="Welcome to Xamarin.Forms!" 
+                HorizontalOptions="CenterAndExpand"
+            />
+            <Button x:Name="BtnLog"  Text="Login"  Clicked="OnLog" Margin="60,50,60,10"/>
+            <Button x:Name="BtnEdit"  Text="Edit Profil"  Clicked="OnEdit" Margin="60,0,60,10"/>
+            <Button x:Name="BtnPush"  Text="Envoi Notification"  Clicked="OnPush" Margin="60,0,60,10"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

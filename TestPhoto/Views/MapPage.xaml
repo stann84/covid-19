@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TestXamarinFirebase.MapPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="Lattitude"/>
+            <Label x:Name="lblLatitude"/>
+            <!--<Entry Keyboard="Numeric " Text="122.255255"
+                   x:Name="EntryLatitude"/>-->
+
+            <Label Text="Longitude"/>
+            <Label x:Name="lblLongitude"/>
+            <!--<Entry Keyboard="Numeric " Text="1263.222"
+                   x:Name="EntryLongitude"/>-->
+
+            <Button x:Name="btnLocation" Text="Geolocalise" Clicked="btnLocation_Clicked"/>
+
+            <Button x:Name="btnGeocodage" Text="Geocodage" Clicked="btnGeocodage_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

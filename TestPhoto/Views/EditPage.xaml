@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             mc:Ignorable="d"
+             x:Class="TestXamarinFirebase.EditPage">
+
+    <StackLayout HorizontalOptions="Center" 
+                 VerticalOptions="Start" 
+                 Margin="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" />
+            </Grid.ColumnDefinitions>
+
+            
+
+            <Image x:Name="imgChoosed" 
+                   HeightRequest="200" 
+                   BackgroundColor="AliceBlue">
+            </Image>
+            <ffimageloading:CachedImage 
+                x:Name="imgff" 
+                HeightRequest="200">
+            </ffimageloading:CachedImage>
+            
+        </Grid>
+
+        <Entry x:Name="Prenom" 
+               Placeholder="Entrez votre prénom" 
+               Margin="0, 10, 0, 0">
+        </Entry>
+        <Entry x:Name="Nom" 
+               Placeholder="Entrez votre nom">
+        </Entry>
+        <Entry x:Name="Tel" 
+               Placeholder="Entrez votre n° de tél">
+        </Entry>
+        <ScrollView>
+        <StackLayout  
+            HorizontalOptions="CenterAndExpand" 
+            Orientation="Vertical">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="auto"/>                    
+                </Grid.ColumnDefinitions>
+
+                <CheckBox Grid.Row="0" Grid.Column="0" x:Name="Fievre" CheckedChanged="Fievre_CheckedChanged"  />
+                <Label Grid.Row="0" Grid.Column="1" Text="Fievre"  FontSize="Large"/>
+                <CheckBox Grid.Row="1" Grid.Column="0" x:Name="Toux" CheckedChanged="Toux_CheckedChanged"  />
+                <Label Grid.Row="1" Grid.Column="1" Text="Toux"  FontSize="Large"/>
+                <CheckBox Grid.Row="2" Grid.Column="0" x:Name="MauxDeGorge"  CheckedChanged="MauxDeGorge_CheckedChanged" />
+                <Label Grid.Row="2" Grid.Column="1" Text="MauxDeGorge"  FontSize="Large"/>
+                <CheckBox Grid.Row="3" Grid.Column="0" x:Name="Courbature"  CheckedChanged="Courbature_CheckedChanged" />
+                <Label Grid.Row="3" Grid.Column="1" Text="Courbature"  FontSize="Large"/>
+                <CheckBox Grid.Row="4" Grid.Column="0" x:Name="Odorat"  CheckedChanged="Odorat_CheckedChanged" />
+                <Label Grid.Row="4" Grid.Column="1" Text="Odorat"  FontSize="Large"/>
+                <CheckBox Grid.Row="5" Grid.Column="0" x:Name="Fatigue"  CheckedChanged="Fatigue_CheckedChanged" />
+                <Label Grid.Row="5" Grid.Column="1" Text="Fatigue"  FontSize="Large"/>
+                <CheckBox Grid.Row="6" Grid.Column="0" x:Name="GeneRespiratoire"  CheckedChanged="GeneRespiratoire_CheckedChanged" />
+                <Label Grid.Row="6" Grid.Column="1" Text="GeneRespiratoire"  FontSize="Large"/>
+                <CheckBox Grid.Row="7" Grid.Column="0" x:Name="Diarrhee"  CheckedChanged="Diarrhee_CheckedChanged" />
+                <Label Grid.Row="7" Grid.Column="1" Text="Diarrhee"  FontSize="Large"/>
+                <CheckBox Grid.Row="8" Grid.Column="0" x:Name="Conjonctivite"  CheckedChanged="Conjonctivite_CheckedChanged" />
+                <Label Grid.Row="8" Grid.Column="1" Text="Conjonctivite"  FontSize="Large"/>
+            </Grid>
+            <Button x:Name="btnPick" 
+                    WidthRequest="200" 
+                    Text="Changer la Photo" 
+                    Clicked="BtnPick_Clicked" 
+                    Margin="0, 20, 0, 0"
+             />
+            <Button x:Name="btnSave" 
+                    WidthRequest="200" 
+                    Text="Sauvegarder" 
+                    Clicked="BtnSave_Clicked"
+             />
+
+            
+
+
+        </StackLayout>
+        </ScrollView>
+        <Label x:Name="lblPath"></Label>
+
+    </StackLayout>
+
+</ContentPage>

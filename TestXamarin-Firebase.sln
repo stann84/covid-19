@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestXamarin-Firebase.Android", "TestPhoto.Android\TestXamarin-Firebase.Android.csproj", "{9FF43542-265B-443E-82D0-DCE878D9F1F6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestXamarin-Firebase", "TestPhoto\TestXamarin-Firebase.csproj", "{3D52BDAA-BA3A-4E5A-B45D-565437BCC20A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FF43542-265B-443E-82D0-DCE878D9F1F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FF43542-265B-443E-82D0-DCE878D9F1F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FF43542-265B-443E-82D0-DCE878D9F1F6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9FF43542-265B-443E-82D0-DCE878D9F1F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FF43542-265B-443E-82D0-DCE878D9F1F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FF43542-265B-443E-82D0-DCE878D9F1F6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3D52BDAA-BA3A-4E5A-B45D-565437BCC20A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D52BDAA-BA3A-4E5A-B45D-565437BCC20A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D52BDAA-BA3A-4E5A-B45D-565437BCC20A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3D52BDAA-BA3A-4E5A-B45D-565437BCC20A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D52BDAA-BA3A-4E5A-B45D-565437BCC20A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D52BDAA-BA3A-4E5A-B45D-565437BCC20A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C9D617F-7EF0-4259-BF1A-4846B59866C9}
+	EndGlobalSection
+EndGlobal

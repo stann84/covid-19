@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TestXamarinFirebase.Views.AuthPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Margin="20">
+
+            <Label
+            Text="FireBase Auth"
+            HorizontalOptions="Center"
+            TextColor="#4682B4"
+            FontSize="30"
+            Margin="0, 0, 0, 30"
+         />
+
+            <Entry
+            Placeholder="E-mail"
+            Keyboard="Email"
+            x:Name="EmailInput"
+         />
+
+            <Entry
+            Placeholder="Mot de passe, min 6 Caractères"
+            IsPassword="true"
+            x:Name="PasswordInput"
+         />
+
+            <Button
+            Text="Connexion"
+            Clicked="LoginClicked"
+            Margin="50, 20, 50, 20"
+            BackgroundColor="#4682B4"
+            TextColor="White"
+            CornerRadius="5"
+         />
+
+            <Label
+            Text="--------------- OU ---------------"
+            HorizontalOptions="Center"
+            TextColor="#4682B4"
+            FontSize="14"
+         />
+
+            <Button
+            Text="Créer un nouveau compte"
+            Clicked="SignUpClicked"
+            Margin="50, 20, 50, 10"
+            BackgroundColor="#46B446"
+            TextColor="White"
+            CornerRadius="5"
+         />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
