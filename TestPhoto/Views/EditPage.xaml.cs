@@ -53,15 +53,7 @@ namespace TestXamarinFirebase
                 imgff.Source = user.PhotoUrl;
                 photo = true;
             }
-            Fievre.IsChecked = user.Fievre;
-            Toux.IsChecked = user.Toux;
-            MauxDeGorge.IsChecked = user.MauxDeGorge;
-            Courbature.IsChecked = user.Courbature;
-            Odorat.IsChecked = user.Odorat;
-            Fatigue.IsChecked = user.Fatigue;
-            GeneRespiratoire.IsChecked = user.GeneRespiratoire;
-            Diarrhee.IsChecked = user.Diarrhee;
-            Conjonctivite.IsChecked = user.Conjonctivite;
+            
         }
         private async void BtnPick_Clicked(Object sender, EventArgs e)
         {
@@ -96,6 +88,9 @@ namespace TestXamarinFirebase
                 Debug.WriteLine(ex.Message);
             }
         }
+
+        // Sauvegarder
+
         private async void BtnSave_Clicked(Object sender, EventArgs e)
         {
             if(photo)
@@ -122,65 +117,12 @@ namespace TestXamarinFirebase
             user.Prenom = Prenom.Text;
             user.Nom = Nom.Text;
             user.Tel = Tel.Text;
-            user.Fievre = Fievre.IsChecked;
-            user.Toux = Toux.IsChecked;
-            user.MauxDeGorge = MauxDeGorge.IsChecked;
-            user.Courbature = Courbature.IsChecked;
-            user.Odorat = Odorat.IsChecked;
-            user.Fatigue = Fatigue.IsChecked;
-            user.GeneRespiratoire = GeneRespiratoire.IsChecked;
-            user.Diarrhee = Diarrhee.IsChecked;
-            user.Conjonctivite = Conjonctivite.IsChecked;
 
             //modifie les données dans la DataBase
             await dataBase.UpdateUser(user);
             await DisplayAlert("Sauvegarde de votre profil réussi", "", "ok");
-            await Navigation.PushAsync(new MapPage());
+            await Navigation.PushAsync(new SymptomesPage());
         }
 
-        private void Fievre_CheckedChanged(object sender, CheckedChangedEventArgs e)
-        {
-
-        }
-
-        private void Toux_CheckedChanged(object sender, CheckedChangedEventArgs e)
-        {
-
-        }
-
-        private void MauxDeGorge_CheckedChanged(object sender, CheckedChangedEventArgs e)
-        {
-
-        }
-
-        private void Courbature_CheckedChanged(object sender, CheckedChangedEventArgs e)
-        {
-
-        }
-
-        private void Odorat_CheckedChanged(object sender, CheckedChangedEventArgs e)
-        {
-
-        }
-
-        private void Fatigue_CheckedChanged(object sender, CheckedChangedEventArgs e)
-        {
-
-        }
-
-        private void GeneRespiratoire_CheckedChanged(object sender, CheckedChangedEventArgs e)
-        {
-
-        }
-
-        private void Diarrhee_CheckedChanged(object sender, CheckedChangedEventArgs e)
-        {
-
-        }
-
-        private void Conjonctivite_CheckedChanged(object sender, CheckedChangedEventArgs e)
-        {
-
-        }
     }
 }

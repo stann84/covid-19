@@ -46,7 +46,7 @@
             HorizontalOptions="CenterAndExpand" 
             Orientation="Vertical">
 
-            <Grid>
+            <!--<Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
                     <RowDefinition Height="30"/>
@@ -81,7 +81,7 @@
                 <Label Grid.Row="7" Grid.Column="1" Text="Diarrhee"  FontSize="Large"/>
                 <CheckBox Grid.Row="8" Grid.Column="0" x:Name="Conjonctivite"  CheckedChanged="Conjonctivite_CheckedChanged" />
                 <Label Grid.Row="8" Grid.Column="1" Text="Conjonctivite"  FontSize="Large"/>
-            </Grid>
+            </Grid>-->
             <Button x:Name="btnPick" 
                     WidthRequest="200" 
                     Text="Changer la Photo" 

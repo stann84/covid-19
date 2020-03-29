@@ -21,9 +21,9 @@
             <!--<Entry Keyboard="Numeric " Text="1263.222"
                    x:Name="EntryLongitude"/>-->
 
-            <Button x:Name="btnLocation" Text="Geolocalise" Clicked="btnLocation_Clicked"/>
+            <!--<Button x:Name="btnLocation" Text="Geolocalise" Clicked="btnLocation_Clicked"/>
 
-            <Button x:Name="btnGeocodage" Text="Geocodage" Clicked="btnGeocodage_Clicked"/>
+            <Button x:Name="btnGeocodage" Text="Geocodage" Clicked="btnGeocodage_Clicked"/>-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
